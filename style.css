@@ -2,5 +2,41 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: solid 1px red;
 }
 
+header {
+    display: flex;
+    padding:20px;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    list-style: none;
+}
+
+header ul {display: none;}
+
+header ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+
+
+
+img {
+    display: block;
+  }
+
+  .red {
+      color: red;
+  }
+
+  @media only screen and (min-width: 800px) {
+    header ul {
+      display: flex;
+    }
+    .hamburger {
+      display: none;
+    }
