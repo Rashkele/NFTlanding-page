@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: solid 1px red;
+    /*border: solid 1px red;*/
 }
 header, section, footer {
   padding: 20px;
@@ -65,7 +65,10 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 max-width: 60%;
 }
 
-
+a {
+    color: black;
+    text-decoration:underline black;
+}
 
 button {
   background-color: white;
@@ -100,22 +103,156 @@ button {
   background-size: cover;
 }
 
-.upsell h1 {
+.upsell h1, .showcase h1 {
   margin-top: 30px;
+  font-weight: lighter;
 }
+
 .press {
-display: flex;
-flex-wrap: wrap;
+    margin-top: 50px;
+display: grid;
+grid-template-areas: 
+"boomerang blimp"
+"qrco droplet";
 max-width: 100%;
+padding: 20px;
+}
+
+.press-logos {
+    padding: 10px;
 }
 
 .press-logos img {
   display: block;
-padding: 5px;
-max-width: 50%;}
+max-width: 100%;}
 
+.opendoor {
+    display: none;
+}
+.showcase-cards {
+  display: flex;
+  column-gap: 30px;
+  }
 
+div.Purpleman {
+  display: block;
+}
 
+div.Beige {
+  display: none;
+}
+
+div.Redman {
+  display: none;
+}
+
+div.Green {
+  display: none;
+}
+
+.card {
+    border-radius: 30px;
+    max-width: 210px;
+    max-height: 350px;
+   }
+
+   .image {
+    background-color: black;
+    max-width: 100%;
+       }
+
+       .image img {
+           display: block;
+           object-fit: cover;
+           width: 100%;
+       }
+
+   .price-tag {
+       background-color: #EEEEEE;
+       padding: 20px;
+       min-width: 100%;
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       gap: 20px;
+   }
+.price {position: relative;}
+
+   img.inline {
+       display: inline-block;
+      position: absolute;
+      left: -15px;
+   }
+   .gloop {
+       color: #FF8139;
+}
+.small-font {
+    font-size: small; 
+}
+
+.greytext {
+  color: #777777;
+}
+
+.boldtext{
+  font-weight: bold;
+  /*font-size: 18px;*/
+}
+
+.footer-upsell {
+  position: relative;
+  border-bottom: #777777 solid 1px;
+  border-top: #777777 solid 1px;
+}
+
+.footer-upsell h1, .footer-upsell p {
+  max-width: 50%;
+  }
+
+.footer-upsell img {
+  position: absolute;
+  max-width: 30%;
+  z-index: -1;
+  top: 10%;
+  right: 10%;
+}
+
+      
+@media only screen and (min-width: 550px) {
+
+div.Purpleman {
+  display: block;
+}
+
+div.Beige {
+  display: block;
+}
+
+div.Redman {
+  display: none;
+}
+
+div.Green {
+  display: none;
+}}
+
+@media only screen and (min-width: 700px) {
+
+  div.Purpleman {
+    display: block;
+  }
+  
+  div.Beige {
+    display: block;
+  }
+  
+  div.Redman {
+    display: block;
+  }
+  
+  div.Green {
+    display: none;
+  }}
 
   @media only screen and (min-width: 800px) {
     header ul {
@@ -123,4 +260,44 @@ max-width: 50%;}
     }
     .hamburger {
       display: none;
-    }}
+    }
+    .hero h1 {
+        font-size: 70px;
+    }
+
+    .hero img {
+        position: absolute;
+        max-width: 30%;
+        z-index: 0;
+        top: -20%;
+        right: 0;
+      }
+
+    .press {
+        display: flex;
+        justify-content: space-between;
+    }
+    .opendoor {
+        display: block;
+    }
+    .showcase-cards {
+      display: flex;
+      column-gap: 30px;
+    }
+
+    div.Purpleman {
+      display: block;
+    }
+    
+    div.Beige {
+      display: block;
+    }
+    
+    div.Redman {
+      display: block;
+    }
+    
+    div.Green {
+      display: block;
+    }
+  }
