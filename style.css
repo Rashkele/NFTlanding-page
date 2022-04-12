@@ -235,6 +235,16 @@ ul.icons {
     margin-right: 10px;
   }
 
+  .links {
+    margin-top: 50px;
+display: grid;
+grid-template-areas: 
+"1 2"
+"3 4";
+max-width: 100%;
+padding: 20px;
+}
+
   .bottom-line {
     margin-top: 50px;
     display: flex;
@@ -242,6 +252,10 @@ ul.icons {
   }
 
   .launching {display: none;}
+
+  div.column {
+    margin-right: 15px;
+  }
       
 @media only screen and (min-width: 550px) {
 
@@ -337,6 +351,12 @@ div.Green {
       display: flex;
       justify-content: space-between;
     }
+
+    div.links {display: flex;
+      }
+
+      div.social-links {display: flex;
+      justify-content: space-between;}
 
     .launching {display: block;}
   }
